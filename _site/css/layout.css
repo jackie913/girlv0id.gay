@@ -1,0 +1,140 @@
+@charset "UTF-8";
+:root {
+  font-size: 14pt;
+  font-family: Courier New;
+  color: white;
+}
+
+@font-face {
+  font-family: sourgummy;
+  src: url(/fonts/SourGummy-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+  font-family: sourgummy;
+  src: url(/fonts/SourGummy-Italic-VariableFont_wdth,wght.ttf);
+  font-weight: bold;
+}
+html, body {
+  margin: 0 0 0 0;
+  background: #100A0A;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #DE94A8;
+}
+
+a {
+  color: #DE94A8;
+}
+a:hover {
+  color: #100A0A;
+  background: #DE94A8;
+}
+
+ul li {
+  line-height: 1.2em;
+}
+
+h1 {
+  position: relative;
+  background: linear-gradient(90deg, #DE94A8 0%, #DE94A8 80%, rgba(222, 148, 168, 0) 100%);
+  color: #100A0A;
+  border-radius: 1%;
+  padding: 0.2em;
+  font-size: 2rem;
+  margin-left: -45px;
+  z-index: 999;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 150px;
+  padding: 0 40px 0 0;
+  background: #100A0A;
+  border-right: #DE94A8 2px solid;
+}
+.sidebar a {
+  text-decoration: none;
+}
+.sidebar ul {
+  padding: 0 0 0 0;
+  margin-left: 10%;
+  list-style-type: none;
+}
+.sidebar ul li ul {
+  margin-left: 0;
+  margin-bottom: 1em;
+}
+.sidebar ul li ul li::before {
+  content: "♥ ";
+}
+
+.content {
+  padding-left: 1em;
+  padding-bottom: 2em;
+  width: 80%;
+  max-width: min(800px, 70vw);
+  margin-left: 200px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #DE94A8;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.arrowList li {
+  list-style: none;
+}
+.arrowList ul li {
+  padding-left: 1em;
+}
+.arrowList ul li::marker {
+  font-size: 1.4em;
+  content: "⤷";
+  color: #DE94A8;
+}
+
+#imagebox {
+  flex-basis: 40%;
+  flex-shrink: 0;
+  margin-right: 50px;
+}
+#imagebox div {
+  margin-top: 25px;
+  outline-style: ridge;
+  outline-width: 8px;
+  outline-color: slategray;
+}
+#imagebox div img {
+  display: block;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (min-width: 1800px) {
+  .thumbnail {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 30%;
+    margin-right: 1em;
+  }
+  .thumbnail img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */
